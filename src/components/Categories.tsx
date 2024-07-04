@@ -53,7 +53,7 @@ const Categories = ({ categories }: CategoryProps) => {
                         key={category}
                         className={`px-3 py-1 rounded-lg ${active === category ? 'bg-secondary-dark text-secondary' : 'bg-secondary'}`} 
                         onClick={() => setActive(category)}
-                        active={active === category}
+                        isactive={active === category}
                     >
                         {category}
                     </MyButton>

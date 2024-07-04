@@ -2,15 +2,18 @@ import { useState } from 'react';
 import logo from '../assets/Logo.png';
 import MyButton from './MyButton';
 import { ArrowLeft, Bell, Menu, Mic, Search, Upload, User } from 'lucide-react';
+import { useSidebarContext } from '../context/SidebarContext';
 
 const PageHeader = () => {
 
     const [showSearch, setShowSearch] = useState(false)
 
+    const { toggle } = useSidebarContext()
+
     return (
         <div className="flex justify-between items-center py-2 px-5 mb-6 gap-10">
             <div className={`${!showSearch ? 'flex' : 'hidden'} gap-3 items-center`}>
-                <MyButton>
+                <MyButton onClick={toggle}>
                     <Menu />
                 </MyButton>
                 <a href="/">

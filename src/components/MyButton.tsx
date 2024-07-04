@@ -2,7 +2,7 @@ import React, { ReactNode, ButtonHTMLAttributes } from "react";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
     children?: ReactNode,
-    active?: boolean
+    isactive?: boolean
 }
 
 const MyButton: React.FC<Props> = ({ children, ...props}) => {
@@ -12,7 +12,7 @@ const MyButton: React.FC<Props> = ({ children, ...props}) => {
     return (
         <button 
             className={`
-              hover:${props.active ? 'bg-black' : 'bg-secondary-hover'} 
+              hover:${props.isactive ? 'bg-black' : 'bg-secondary-hover'} 
                 transition-colors duration-300 
                 rounded-full 
                 p-1.5

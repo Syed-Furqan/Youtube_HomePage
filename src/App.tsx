@@ -12,7 +12,7 @@ function App() {
       <div className="grid grid-cols-[auto,1fr] flex-grow-1 overflow-auto">
         <Sidebar />
         <div className='overflow-x-hidden px-8 pb-4'>
-          <div className='sticky top-0 z-50 bg-white pb-4'>
+          <div className='sticky top-0 z-50 bg-white pb-4 min-w-80'>
             <Categories categories={categories} />
           </div>
           <div className='grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))]'>

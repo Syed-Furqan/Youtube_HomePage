@@ -18,6 +18,21 @@ export default {
         }
       }
     },
+    screens: {
+      'sm': '640px',
+
+      'md': '768px',
+
+      'lg': '1024px',
+
+      'xl': '1280px',
+
+      '2xl': '1536px',
+
+      'lg_max': {'max': '1024px'},
+
+      'sm_max': {'max': '500px'}
+    }
   },
   plugins: [],
 }
