@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../assets/Logo.png';
+import logo from '../assets/YouTube_Logo.png';
 import MyButton from './MyButton';
 import { ArrowLeft, Bell, Menu, Mic, Search, Upload, User } from 'lucide-react';
 import { useSidebarContext } from '../context/SidebarContext';
@@ -17,7 +17,7 @@ const PageHeader = () => {
                     <Menu />
                 </MyButton>
                 <a href="/">
-                    <img src={logo} className="h-6"/>
+                    <img src={logo} className="w-24 min-w-16" />
                 </a>
             </div>
             <div className={`${showSearch ? 'flex' : 'hidden md:flex'} flex-grow items-center justify-center gap-3 `}>
